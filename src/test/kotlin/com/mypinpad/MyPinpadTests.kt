@@ -130,6 +130,11 @@ class MyPinpadTests {
         assert(!isInRange)
     }
 
+    /**
+     * An extended character is an ASCII character which is not in the standard ASCII character set,
+     * which uses 7-bit characters and thus has values 0 to 127,
+     * this means that letters like "Ñ", "È", "Ł" aren't in range [A-Z]
+     */
     @Test
     fun `false when it's an extended character`() {
         val subjectWord = "Ñ"
