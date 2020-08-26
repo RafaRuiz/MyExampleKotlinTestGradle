@@ -11,6 +11,7 @@ repositories {
 
 dependencies {
     implementation(kotlin("stdlib-jdk7"))
+    testImplementation("junit:junit:4.13")
 }
 
 tasks {
@@ -20,4 +21,10 @@ tasks {
     compileTestKotlin {
         kotlinOptions.jvmTarget = "1.8"
     }
+}
+
+tasks.test {
+    useJUnit()
+
+    maxHeapSize = "1G"
 }
