@@ -2,8 +2,8 @@ plugins {
     kotlin("jvm") version "1.3.72"
 }
 
-group = "org.example"
-version = "1.0-SNAPSHOT"
+group = "com.mypinpad"
+version = "1.0.0"
 
 repositories {
     mavenCentral()
