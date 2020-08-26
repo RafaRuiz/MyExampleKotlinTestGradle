@@ -1,0 +1,2 @@
+# MyPinpadKotlinTestGradle
+MyPinpad first test!
