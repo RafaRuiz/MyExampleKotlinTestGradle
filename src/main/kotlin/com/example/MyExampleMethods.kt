@@ -1,4 +1,4 @@
-package com.mypinpad
+package com.example
 
 /**
  * function isInRange takes a:

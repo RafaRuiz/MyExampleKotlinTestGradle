@@ -1,12 +1,12 @@
-package com.mypinpad
+package com.example
 
 import org.junit.Test
 
-class MyPinpadTests {
+class MyExampleTests {
 
     @Test
     fun `true when it's a word starting with (A-Z)`() {
-        val subjectWord = "Mypinpad"
+        val subjectWord = "Myexample"
 
         val isInRange = isInRange(subjectWord)
 
@@ -15,7 +15,7 @@ class MyPinpadTests {
 
     @Test
     fun `false when it's a word starting with (a-z)`() {
-        val subjectWord = "mypinpad"
+        val subjectWord = "myexample"
 
         val isInRange = isInRange(subjectWord)
 
@@ -24,7 +24,7 @@ class MyPinpadTests {
 
     @Test
     fun `true when it's a mixed uppercase & lowercase word starting with (A-Z)`() {
-        val subjectWord = "MyPiNpAd"
+        val subjectWord = "MyExAmPlE"
 
         val isInRange = isInRange(subjectWord)
 
@@ -33,7 +33,7 @@ class MyPinpadTests {
 
     @Test
     fun `false when it's a mixed uppercase & lowercase word starting with (a-z)`() {
-        val subjectWord = "myPiNpAd"
+        val subjectWord = "myExAmPlE"
 
         val isInRange = isInRange(subjectWord)
 
@@ -42,7 +42,7 @@ class MyPinpadTests {
 
     @Test
     fun `false when it's a word starting with (A-Z) but it has a space as prefix`() {
-        val subjectWord = " MyPiNpAd"
+        val subjectWord = " MyExAmPlE"
 
         val isInRange = isInRange(subjectWord)
 
